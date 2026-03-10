@@ -1,0 +1,238 @@
+Perfect 👍
+Neeche **Option 1 – AI-Powered Stock Market Intelligence Platform** ka **MODULE-WISE ALGORITHM** diya hai — **bilkul asaan bhasha + exam-ready + report-ready** format me.
+
+---
+
+## 🧠 OVERALL SYSTEM FLOW (High Level)
+
+![Image](https://www.researchgate.net/profile/Zeeshan-Bhatti/publication/326997666/figure/fig6/AS%3A659224052895745%401534182670584/AI-Based-Prediction-of-Stock-Market-Behavior-System-Architecture.png)
+
+![Image](https://www.researchgate.net/publication/327835689/figure/fig2/AS%3A674224788238342%401537759124585/Pipeline-of-the-stock-mid-price-prediction-system-used-Limit-order-events-generated-by.png)
+
+![Image](https://www.slideteam.net/media/catalog/product/cache/1280x720/f/i/financial_data_analytics_flowchart_for_effective_planning_slide01.jpg)
+
+**Input → Data Processing → ML Models → Analysis → Dashboard Output**
+
+---
+
+# 📦 MODULE-WISE ALGORITHM (STEP BY STEP)
+
+---
+
+## 🔹 MODULE 1: Data Collection Module
+
+### Objective
+
+Stock ka **raw data** aur **news data** collect karna.
+
+### Algorithm
+
+1. User stock symbol select kare (e.g. TCS, INFY)
+2. Yahoo Finance API se:
+
+   * Open, High, Low, Close, Volume data fetch karo
+3. News API se:
+
+   * Company related news headlines nikalo
+4. Data ko CSV / DataFrame me store karo
+
+### Output
+
+✔ Price dataset
+✔ News dataset
+
+---
+
+## 🔹 MODULE 2: Data Preprocessing Module
+
+### Objective
+
+Data ko **ML-ready** banana.
+
+### Algorithm
+
+1. Missing values remove / fill karo
+2. Date ko time-series format me convert karo
+3. Price data normalize karo (Min-Max scaling)
+4. News text:
+
+   * Lowercase
+   * Stopwords remove
+   * Tokenization
+
+### Output
+
+✔ Clean price data
+✔ Clean text data
+
+---
+
+## 🔹 MODULE 3: Technical Indicators Module
+
+### Objective
+
+Stock ka **technical behavior** samajhna.
+
+### Algorithm
+
+1. Close price se Moving Average calculate karo
+2. RSI calculate karo (overbought / oversold check)
+3. MACD generate karo (buy/sell signal)
+4. Bollinger Bands calculate karo
+5. In sab indicators ko dataset me add karo
+
+### Output
+
+✔ Feature-rich dataset
+
+---
+
+## 🔹 MODULE 4: Price Prediction Module (LSTM / Transformer)
+
+### Objective
+
+Future stock price predict karna.
+
+### Algorithm
+
+1. Time-series window create karo (last N days)
+2. Data ko train-test split karo
+3. LSTM / Transformer model train karo
+4. Model ko future price predict karne do
+5. Prediction ko inverse scale karo
+
+### Output
+
+✔ Predicted stock price
+
+---
+
+## 🔹 MODULE 5: News Sentiment Analysis Module
+
+### Objective
+
+News ka **positive ya negative impact** nikalna.
+
+### Algorithm
+
+1. Har news headline input lo
+2. NLP model se sentiment score calculate karo
+3. Score ko classify karo:
+
+   * Positive
+   * Negative
+   * Neutral
+4. Daily average sentiment calculate karo
+
+### Output
+
+✔ Sentiment score (-1 to +1)
+
+---
+
+## 🔹 MODULE 6: Hybrid Decision Engine (Core Intelligence 🔥)
+
+### Objective
+
+Sab outputs ko combine karke **final decision** lena.
+
+### Algorithm
+
+1. Price prediction output lo
+2. Technical indicators signals lo
+3. News sentiment score lo
+4. Weighted logic apply karo:
+
+   * Price trend → high weight
+   * News → medium weight
+   * Indicators → medium weight
+5. Final signal generate karo:
+
+   * BUY
+   * SELL
+   * HOLD
+
+### Output
+
+✔ Final trading signal
+
+---
+
+## 🔹 MODULE 7: Risk & Volatility Analysis Module
+
+### Objective
+
+Stock ka **risk level** batana.
+
+### Algorithm
+
+1. Daily returns calculate karo
+2. Volatility calculate karo
+3. Maximum drawdown find karo
+4. Risk score generate karo:
+
+   * Low
+   * Medium
+   * High
+
+### Output
+
+✔ Risk indicator
+
+---
+
+## 🔹 MODULE 8: Model Evaluation Module
+
+### Objective
+
+Model ki **performance check** karna.
+
+### Algorithm
+
+1. Actual vs predicted price compare karo
+2. RMSE, MAE calculate karo
+3. LSTM vs Transformer compare karo
+4. Best model select karo
+
+### Output
+
+✔ Accuracy report
+
+---
+
+## 🔹 MODULE 9: Explainable AI Module (SHAP)
+
+### Objective
+
+Model ne prediction **kyun diya**, ye explain karna.
+
+### Algorithm
+
+1. Trained model input lo
+2. SHAP values calculate karo
+3. Feature importance graph generate karo
+4. Top influencing factors show karo
+
+### Output
+
+✔ Explainable prediction
+
+---
+
+## 🔹 MODULE 10: Web Dashboard Module
+
+### Objective
+
+User-friendly interface banana.
+
+### Algorithm
+
+1. User stock select kare
+2. Backend se predictions fetch ho
+3. Graphs + signals display karo
+4. Risk & sentiment show karo
+
+### Output
+
+✔ Interactive dashboard
+
